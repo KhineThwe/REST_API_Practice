@@ -1,0 +1,30 @@
+REST API ----> Representational State Transfer 
+Web service ပေးတယ်လို့လည်းခေါ်တယ်
+2000 ခုနှစ်နောက်ပိုင်းမှာ သုံးတယ်
+2000 ရှေ့မှာတော့ SOAP ------> Simple Object Access Protocol ကိုသုံးတယ်
+
+REST API က data ပဲအသွားအပြန်လုပ်တာမို့လို့ bandwidth အစားသက်သာတယ်
+django enviroment တစ်ခုဆောက်ပြီးတော့ သုံးမယ်
+version မတူတဲ့ပြသနာမျိုးတွေမဖြစ်အောင်လို့ env သုံးရမယ်
+pj တစ်ခုတိုင်းအတွက် env တစ်ခုတည်ဆောက်ရေးပြီးတော့ ဘာတွေသုံးလဲဆိုပြီး record
+တစ်ခုချန်ခဲ့မယ်
+
+-----------------------------------------------------------------------
+To create django env
+----------------------
+-virtualenv workon
+-workon\Scripts\activate
+-pip install django==4.1.4
+For postgresql
+-pip install psycopg2
+
+To install django rest framework
+-pip install djangorestframework
+
+To create django project
+-django-admin startproject otrest
+
+
+Go into otrest and create django app
+-
+
