@@ -26,5 +26,39 @@ To create django project
 
 
 Go into otrest and create django app
--
+-python manage.py startapp restapp
+
+------------------------------------------
+Step1.install app in settings.py
+Step2: change db name all to postgresql settings
+Step3:create Info models
+python manage.py migrate
+python manage.py makemigrations restapp
+python manage.py migrate
+
+
+မသိတဲ့ data type ကနေသိတဲ့data type ပြောင်းတာ serialization
+but django has serializer file in rest_framework
+so serializer ဆိုတဲ့ file တစ်ခုတည်ဆောက်ပေးရမယ် in restapp အဲ့ထဲမှာ ဘာမှမရေးဘူး serialziation လုပ်မဲ့ code တွေချည်းသီးသန့်ရေးမယ်
+serializer file ရေးချိန်မှာ
+---------------------------
+error တက်ခဲ့ရင် pip install --user djangorestframework
+or
+select interperter ကိုတစ်ချက်ကြည့်ပေး view-->command palette
+------------------------------------------------------------
+ဝင်လာတဲ့ data တွေကို python သိအောင် 
+serialization လုပ်ပေးမှာ
+models ထဲက data တွေကို serialization file ကနေ လှမ်းယူမှာဖြစ်တယ်
+------------------------------------------------------------
+rest နဲ့သုံးတဲ့အခါကျတော့ view အစား viewsets ကိုသုံးမယ်db ထဲက CRUD operation အကုန်လုံးကို viewsets class 
+က support လုပ်ပေးတာမို့လို့
+----------------------------
+normal django မှာတော့ url လိုခဲ့ပေမဲ့
+rest_api မှာတော့ route ဆိုတဲ့ကောင်ကိုသုံးမယ်
+router ကိုသုံးလိုက်ခြင်းအားဖြင့် get,post,put,.... အစရှိသဖြင့်တစ်ခုချင်းစီရေးစရာမလိုတော့ဘဲနဲ့ router ထဲရှိ register method သုံးလိုက်ရင်ရ
+prefix,viewset ဆိုတဲ့ parameter နှစ်ခုထည့်ပေးရမယ်
+project ထဲမှာဆောက်ပေးရမှာဖြစ်တယ် 
+prefix ----> အသုံးပြုမည့်url
+
+ပြီးရင်တော့ project folder ထဲမှာ url သွားပေးပေးဖို့လိုမယ်
 
